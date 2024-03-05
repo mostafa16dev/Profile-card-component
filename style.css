@@ -1,0 +1,101 @@
+:root {
+    --dark-cyan-color: hsl(185, 75%, 39%);
+    --dark-saturated-blue-color: hsl(229, 23%, 23%);
+    --dark-grayish-blue-color: hsl(227, 10%, 46%);
+    --dark-gray-color: hsl(0, 0%, 59%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: "Kumbh Sans", sans-serif;
+    /* font-optical-sizing: auto; */
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    /* background: url(images/bg-pattern-top.svg) -62% 175% no-repeat, local url(images/bg-pattern-bottom.svg) 149% -131% no-repeat var(--dark-cyan-color); */
+    background: url(images/bg-pattern-top.svg) right 52vw bottom 32vh no-repeat, local url(images/bg-pattern-bottom.svg) left 48vw top 52vh no-repeat var(--dark-cyan-color);
+}
+
+.card {
+    width: 350px;
+    height: 375px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0px 35px 65px 10px rgba(45, 50, 72, 0.25);
+    -webkit-box-shadow: 0px 35px 65px 10px rgba(45, 50, 72, 0.25);
+    -moz-box-shadow: 0px 35px 65px 10px rgba(45, 50, 72, 0.25);
+}
+
+header {
+    height: 140px;
+    background-image: url(images/bg-pattern-card.svg);
+    background-repeat: repeat;
+}
+
+main {
+    position: relative;
+    top: -52.5px;
+    border-bottom: 1px solid hsl(0, 0%, 89%);
+}
+
+.card-avatar {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-bottom: 0.8em;
+}
+
+main h3 {
+    color: var(--dark-saturated-blue-color);
+    margin-bottom: .4em;
+}
+
+main span {
+    color: var(--dark-grayish-blue-color);
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+main h6 {
+    color: var(--dark-grayish-blue-color);
+    font-size: 0.75em;
+    font-weight: 400;
+    padding-bottom: 2em;
+}
+
+footer {
+    height: 0px;
+    padding-top: 0.7em;
+    display: flex;
+    align-items: end;
+    justify-content: space-evenly;
+}
+
+footer article h3 {
+    font-size: 1em;
+    color: var(--dark-saturated-blue-color);
+    margin-bottom: .2em;
+}
+
+footer article h6 {
+    font-size: 0.59em;
+    color: var(--dark-gray-color);
+    letter-spacing: .1em;
+    font-weight: 400;
+}
+
+@media (max-width:400px) {
+    .card {
+        width: 325px;
+    }
+}
